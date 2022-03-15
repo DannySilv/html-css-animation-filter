@@ -122,6 +122,7 @@
     }
     
 }
+
 .ex-12-button, .ex-13-button {
     position: relative;
     display: block;
@@ -150,4 +151,90 @@
     background: #f5f5f5;
     width: 60px;
     height: 20px;
+}
+
+/* EX-12 */
+.ex-12-button:hover .ex-12-bottom-white {
+    animation: to-the-left 1.5s linear;
+}
+@keyframes to-the-left {
+    0% {
+        right: 20%;
+    }
+    50% {
+        right: 68%;
+    } 
+    100% {
+        right: 20%;
+    }  
+}
+.ex-12-button:hover .ex-12-top-white {
+    animation: to-the-right 1.5s linear;
+}
+@keyframes to-the-right {
+    0% {
+        left: 10%;
+    }
+    50% {
+        left: 68%;
+    }
+    100% {
+        left: 10%;
+    }
+}
+
+/* EX-13 */
+.ex-13-button:hover .ex-13-bottom-white {
+    animation: left-to-start 2s linear;
+}
+@keyframes left-to-start {
+    0% {
+        right: 20%;
+    }
+    25% {
+        right: calc(100% - 30px);
+        bottom: -10px;
+    }
+    40% {
+        right: calc(100% - 30px);
+        bottom: 60%;
+    }
+    65% {
+        right: 0;
+        bottom: 100%;
+    }
+    80% {
+        right: -10%;
+        bottom: -10px;
+    }
+    100% {
+        right: 20%;
+    }
+}
+.ex-13-button:hover .ex-13-top-white {
+    animation: right-to-start 2s linear;
+}
+@keyframes right-to-start {
+    0% {
+        left: 10%;
+    }
+    25% {
+        left: calc(100% - 30px);
+        top: -10px;
+    }
+    40% {
+        left: calc(100% - 30px);
+        top: 60%;
+    }
+    65% {
+        left: 0;
+        top: 100%;
+    }
+    80% {
+        left: -5%;
+        top: -10px;
+    }
+    100% {
+        left: 10%;
+    }
 }
